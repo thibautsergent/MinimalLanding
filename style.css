@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  padding: 10px;  
+  max-width: 1140px;  
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #333;
+  
+  background-color: #f5f5f5;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////// header + nav */
+
+
+header {
+  margin: 24px 0;
+  padding: 0 0 0 120px;
+  min-height: 96px;
+  
+  background-image: url("img/logo.png");
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+    
+  line-height: 1;
+}
+
+header p {
+  margin: 0;
+  padding: 0;
+  
+  font-weight: 100;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 10px 20px;
+  min-width: 120px;
+  
+  text-align: center;
+  
+  background-color: #457af5;
+  border: 1px solid rgba(0,0,0,0.125);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 3px 1px -2px rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.06);
+}
+
+
+nav ul li a {
+  color: white;  
+  text-decoration: none !important;;
+  border: none !important;
+}
+
+nav ul li a:hover {
+  color: white !important;  
+  background-color: transparent !important;
+  border-bottom: 1px solid white !important;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////// main */
+
+main {
+  margin: 24px auto;
+}
+
+main > h2 {
+  margin-bottom: 0;  
+}
+
+section {
+  margin: 10px 0 24px 0;
+  padding: 24px;  
+  
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.125);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 3px 1px -2px rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.06);
+}
+
+section > h2 {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {font-size: 1.778em}
+h2 {font-size: 1.333em}
+h3 {font-size: 1.039em}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+a {
+  color: #2196f3;	
+  text-decoration: none;
+  border-bottom: 1px solid #2196f3;
+}
+
+a:hover {
+  border-bottom: 1px solid #2196f3;
+  background-color: #e3f2fd;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.89em;
+}
+
+th, td {
+  padding: 0.4em 0.7em;  
+  border: 1px solid #bbb;
+}
+
+pre, code {
+  background-color: #F5F7F9;
+  border: 1px solid #DFDFDF;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.125);
+  border-radius: 4px;
+  
+  overflow: auto;
+	cursor: text;
+}
+
+pre code {
+  background-color: none;
+  border: none;
+  box-shadow: none;
+}
+
+blockquote {
+  margin: 20px;
+  padding-left: 20px;  
+  border-left: 3px solid #DFDFDF;
+}
+
+hr {
+  margin: 50px auto;
+  width: 85%;
+  border: 1px inset #F5F7F9;
+}
+
+.underline, ins {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////// blog */
+
+.post {
+  display: block;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+.post-info {
+  display: block;
+  margin: 0; padding: 0;
+}
+
+.post-img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  
+  background-size: contain;
+  background-position: center;
+}
+
+.post-title {
+  display: block;  
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+
+.post-title a {
+  font-size: 1.25em;
+  color: #333;
+  
+  text-decoration: none !important;
+  border: none !important;;
+}
+
+.post-title a:hover {
+  border-bottom: 1px solid #333 !important;
+  background-color: transparent !important;
+}
+
+
+
+.post-content {
+  margin-top: 24px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////// contact */
+
+form {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+
+}
+
+form label {
+	display: block;
+	margin: 20px 0 10px 0;
+}
+
+form input {
+  display: block;  
+  width: 100%;
+	height: 40px;
+}
+
+form select {
+	width: 100%;
+	height: 40px;
+}
+
+form textarea {
+	width: 100%;
+	height: 200px;
+  margin-bottom: 20px;
+	padding: 5px;
+}
+
+form input[type=submit] {
+	width: 100%;
+	max-width: 300px;
+}
